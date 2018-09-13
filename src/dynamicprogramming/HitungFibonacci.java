@@ -5,6 +5,8 @@
  */
 package dynamicprogramming;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ASUS
@@ -24,6 +26,14 @@ public class HitungFibonacci {
         String identitas = "Kamaludin Ahmad S. / X RPL 5 / 16";
         
         tampilJudul(identitas);
+        int n = tampilInput();
+    }
+    private static int tampilInput(){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        return n;
     }
 }
 
